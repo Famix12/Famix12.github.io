@@ -47,15 +47,17 @@ body {
 
 
 
-.main--left {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.main--right {
+  display: grid;
+  grid-template-rows: 45vh 10vh auto
+  ;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
   padding: 4vh;
 }
 
 .nav--btn {
-  background-color: #26b83c;
+  background-color: #adbbaf;
   width: 30vh;
   padding: 1rem;
   margin: 1rem;
@@ -100,18 +102,34 @@ body {
 }
 
 .myphoto {
-
+  margin: 0 auto;
   box-shadow: 0px 0px 8px 0px #ffffff;
   border-radius: 100%;
   width: 350px;
   height: 350px;
   opacity: 0.9;
-  /* position: absolute;
-  right: 25vh;
-  top: 6vw; */
 }
 
+.social {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  overflow: hidden;
+}
+.social > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #11b62a;
+}
 
+.social > a >i:hover{
+  transform: translateY(-0.0125rem)scale(1.250);
+  transition: 0.1s ease-in-out;
+
+}
 
 
 .logo {
@@ -441,4 +459,26 @@ body {
     visibility: hidden;
   }
 
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px white; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #077217; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0c3b13; 
 }

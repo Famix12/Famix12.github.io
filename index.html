@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/CSS" href="style.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <title>Document</title>
 </head>
 
@@ -22,7 +23,7 @@
         <!-- nav -->
         <!-- <a href="#" id="about"> > About _</a> -->
         <!-- <a href="#" id="cont"> > Contact _</a> -->
-        <div class="main--right" style="width: 60vw">
+        <div class="main--left" style="width: 60vw">
             <div class="r1">
                 <div class="r2"></div>
                 <div class="c1"></div>
@@ -61,14 +62,21 @@
             </div>
         </div>
 
-        <div class="main--left" style="width: 40vw">
+        <div class="main--right" style="width: 40vw">
+            
             <img class="myphoto" src="src/myphoto.png">
+            <div class="social">
+                <a href="https://github.com/Famix12/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/abd_fa12/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/abdulkarim-abahusain-436088201/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/qrwo11/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
 
             <div style="display: flex; height: fit-content; flex-wrap: wrap; justify-content: center;">
                 <button class="nav--btn" id="skill">> Skills _</button>
                 <button class="nav--btn" id="proj">> Projects _</button>
-                <button class="nav--btn" id="CvBtn" >> CV _</button>
-                <button class="nav--btn" id="proj">> Contant with me _</button>
+                <a href="/src/Abdulkarim_CV.pdf" download><button class="nav--btn" id="CvBtn">> CV _</button></a>
+                <a href="mailto:abdulkarim.abahusain@gmail.com"><button class="nav--btn" id="contact" >> Email me _</button></a>
             </div>
         </div>
 
@@ -79,6 +87,7 @@
     <div class="section" id="s2">
 
         <h1 style="color: whitesmoke;">Skills</h1>
+
 
         <div class="card--cont">
 
@@ -115,9 +124,11 @@
 
     </div>
     <div class="section" id="s4">
+        <div class="footer">
 
-        <h1 style="color: whitesmoke;">Contact</h1>
 
+
+        </div>
     </div>
 
 
@@ -136,9 +147,7 @@ function HideShow2() {
 
 setTimeout( HideShow,2500);
 setTimeout( HideShow2,4000);
-  
-  
-
-
 </script>
+
 <script  src="functions.js"></script>
+<script src="https://kit.fontawesome.com/cb985889a3.js" crossorigin="anonymous"></script>
