@@ -20,71 +20,57 @@
     <div class="section" id="s1">
 
         <!-- nav -->
+        <!-- <a href="#" id="about"> > About _</a> -->
+        <!-- <a href="#" id="cont"> > Contact _</a> -->
+        <div class="main--right" style="width: 60vw">
+            <div class="r1">
+                <div class="r2"></div>
+                <div class="c1"></div>
+                <div class="c2"></div>
+                <div class="c3"></div>
 
-        <div class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-header">
-                <div class="nav-title">
-                    <img src="src/PixleLogo.svg" class="logo">
-                </div>
-            </div>
-            <div class="nav-btn">
-                <label for="nav-check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
-            </div>
+                <div class="headertext">
+                    <p class="typing-demo">profile@me:~$ ./Welcome.sh </p>
 
-            <div class="nav-links">
-                <!-- <a href="#" id="about"> > About _</a> -->
-                <a href="#" id="skill"> > Skills _</a>
-                <a href="#" id="proj"> > Projects _</a>
-                <!-- <a href="#" id="cont"> > Contact _</a> -->
-            </div>
-        </div>
+                    <div class="info">
+                        <p class="WelcomeText">Hello, i'm Abdulkarim<br>
+                        <p class="WelcomeText" style="font-size: 28px; padding: 10px 0 0 40px ;">
+                            sephomore Computer sinece <br>
+                            student at JIC. i'm juner <br>
+                            Front-End devoloper & <br>
+                            graphic desighner ,<br>
+                            repellat asperiores cum eaque <br>
+                            adipisci ullam vel <br>
+                        </p>
 
+                        </p>
+                    </div>
 
-        <div class="r1">
-            <div class="r2"></div>
-            <div class="c1"></div>
-            <div class="c2"></div>
-            <div class="c3"></div>
+                    <p class="hide" id="cvsh">profile@me:~$ tree /My_CV</p>
 
-            <div class="headertext">
-                <p class="typing-demo">profile@me:~$ ./Welcome.sh </p>
-
-                <div class="info">
-                    <p class="WelcomeText">Hello, i'm Abdulkarim<br>
-                    <p class="WelcomeText" style="font-size: 30px; padding: 10px 0 0 40px ;">
-                        Lorem ipsum dolor sit amet consectetur <br>
-                        adipisicing elit. Voluptates sequi magni,<br>
-                        illo labore hic pariatur optio expedita<br>
-                        aperiam temporibus voluptatem, quidem<br>
-                        repellat asperiores cum eaque beatae <br>
-                        adipisci ullam vel quaerat.<br>
-                    </p>
-
-                    </p>
-                </div>
-
-                <p class="typing-demo last" id="cv.sh">profile@me:~$ tree /Me</p>
-
-
-                    <a class="tree--cv" href="/src/Abdulkarim_CV.pdf" download > 
-                        <p>/Me<br>
-                        &nbsp├── info 
+                    <a class="hide" id="tree--cv" href="/src/Abdulkarim_CV.pdf" download>
+                        <p  style="cursor:default">/My_CV<br>
+                            &nbsp├── info
                         </p><span class="get--cv">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp├── check_out_my_CV.pdf</span>
                     </a>
-          
+
+
+                </div>
+
 
             </div>
-
-
         </div>
 
+        <div class="main--left" style="width: 40vw">
+            <img class="myphoto" src="src/myphoto.png">
 
-
+            <div style="display: flex; height: fit-content; flex-wrap: wrap; justify-content: center;">
+                <button class="nav--btn" id="skill">> Skills _</button>
+                <button class="nav--btn" id="proj">> Projects _</button>
+                <button class="nav--btn" id="CvBtn" >> CV _</button>
+                <button class="nav--btn" id="proj">> Contant with me _</button>
+            </div>
+        </div>
 
     </div>
 
@@ -93,14 +79,14 @@
     <div class="section" id="s2">
 
         <h1 style="color: whitesmoke;">Skills</h1>
-        
+
         <div class="card--cont">
 
-            
+
             <div class="card">
                 <img class="img1" src="/src/css.png">
             </div>
-            
+
             <div class="card">
                 <img class="img1" src="/src/html.png">
             </div>
@@ -108,9 +94,9 @@
             <div class="card">
                 <img class="img1" src="/src/react.png">
             </div>
-            
+
             <div class="card">
-                <img class="img1"src="/src/figma.png">
+                <img class="img1" src="/src/figma.png">
                 <span></span>
             </div>
 
@@ -118,9 +104,9 @@
                 <img class="img1" src="/src/ph.png">
             </div>
 
-            
+
         </div>
-        
+
     </div>
 
     <div class="section" id="s3">
@@ -140,4 +126,19 @@
 </body>
 
 </html>
-<script src="index.js"></script>
+<script>
+function HideShow() {
+    document.getElementById('cvsh').classList.replace('hide','typing-demo');
+};
+function HideShow2() {
+    document.getElementById('tree--cv').classList.replace('hide','tree--cv');
+};
+
+setTimeout( HideShow,2500);
+setTimeout( HideShow2,4000);
+  
+  
+
+
+</script>
+<script  src="functions.js"></script>
