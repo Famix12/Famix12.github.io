@@ -34,7 +34,7 @@ body {
 
 #s2,
 #s3 {
-  height: 80vh;
+  height: 90vh;
   justify-content: center;
   text-align: center;
 }
@@ -347,26 +347,35 @@ body {
   transition: 0.3s;
 }
 
-.card--cont {
+.card--container {
   display: flex;
   flex-wrap: wrap;
-}
-
-.card--cont {
   justify-content: center;
   text-align: center;
-
+}
+.dropCard{
+  animation: 0.5s ease-out 0s 1  drop
 }
 
 .card {
-  width: 10rem;
-  height: 10rem;
-  background-color: #131111;
+  /* animation: 0.5s ease-out 0s 1  drop ; */
+  width:15vw;
+  height: 30vh;
+  background-color: #011204;
   border-radius: 0.7rem;
   margin: 10px;
+  }
 
-
-}
+  @keyframes drop{
+    0%{
+      transform:  translateY(-20vh);
+      opacity: 0.1;
+    }
+    100%{
+      transform:  translateY(0);
+      opacity: 1;
+    }
+  }
 
 
 
@@ -375,16 +384,44 @@ body {
   width: 50%;
   margin: auto;
   padding-top: 1rem;
-  filter: brightness(100%);
+  }
+.card > h2 {
+  color: white;
+  padding-top: 1rem;
+  font-family: monospace;
+}
+
+/* .progress--bar{
+  background-color: #fff;
+  height: 1.5vh;
+  transition: 0.4s linear; 
+} */
 
 
+.progress {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  margin: 2vh 2.5vh;
+  padding: 0 5px;
+  display: flex;
+  height: 1.5rem;
+}
+
+.progress-value {
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #ffffff;
+  height: 1rem;
+  width: 80%;
 }
 
 .card:hover {
   transform: translateY(-0.0125rem)scale(1.0250);
   transition: 0.1s ease-in-out;
   outline: solid white 1px;
-
 }
 
 
@@ -481,4 +518,29 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #0c3b13; 
+}
+
+@keyframes p95 {
+  0% { width: 0; }
+  100% { width :95%; }
+}
+
+@keyframes p85 {
+  0% { width: 0; }
+  100% { width :85%; }
+}
+
+@keyframes p40 {
+  0% { width: 0; }
+  100% { width :40%; }
+}
+
+@keyframes p55 {
+  0% { width: 0; }
+  100% { width :55%; }
+}
+
+@keyframes p75 {
+  0% { width: 0; }
+  100% { width :75%; }
 }
