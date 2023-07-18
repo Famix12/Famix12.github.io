@@ -94,12 +94,21 @@ background-blend-mode: darken; */
   transition: 0.1s ease-in-out;
 }
 
-.prj-card:hover{
-
+.prj-card:hover
+{
   transform: translateY(-0.0125rem) scale(1.05) ;
   transition: 0.25s ease;
 
 }
+
+.achevCard:hover{
+  transform: translateY(-0.0125rem) scale(1.05) ;
+  transition: 0.25s ease;
+
+}
+
+
+
 /* 
 transform: translateY(-0.0125rem) scale(1.15);
 transition: 0.1s ease-in-out;
@@ -230,6 +239,7 @@ transition: 0.1s ease-in-out;
   width: 500px;
   height: 500px;
 }
+
 
 @media only screen and (max-width: 790px) {
   .landing {
