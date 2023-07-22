@@ -202,10 +202,8 @@ body {
 }
 
 .skills-icon-group {
-  padding-left: 0;
   list-style: none;
   font-size: 3rem;
-  margin-bottom: 0;
   margin: 20px;
   text-align: center;
 }
@@ -216,13 +214,11 @@ body {
   font-size: 35%;
 }
 
+
 .skill-icon img {
-  /* filter: grayscale(100%); */
   height: 100px;
   width: auto;
   padding-bottom: 0.5rem;
-  /* max-width: 100%;
-  max-height: 100%; */
 }
 
 .skills-icon-group>li>img:hover {
@@ -285,8 +281,8 @@ body {
 .edu-content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: top;
+  justify-content: left;
+  align-items:center ;
   gap: 10%;
 }
 
@@ -545,9 +541,11 @@ body {
 
 .hidden {
   opacity: 0;
-  transition: all 1s;
+  transition: all 1S;
+  transform: translateX(-100%);
 }
 
 .show {
   opacity: 1;
+  transform: translateX(0);
 }
