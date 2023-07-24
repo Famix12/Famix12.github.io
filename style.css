@@ -78,6 +78,8 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-family: Roboto Mono;
+
+  background-attachment: fixed;
 }
 
 /* ######### sections ######### */
@@ -369,6 +371,16 @@ body {
 }
 
 @media only screen and (max-width: 790px) {
+
+  .social{
+    align-items: center;
+    justify-content: center;
+  }
+  .landing-btn{
+    justify-content: center;
+    align-items: center;
+  }
+
   .landing {
     flex-wrap: wrap;
     height: fit-content;
@@ -376,6 +388,15 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 20px;
+  }
+
+  .landing-text {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .landing-text > h3 {
+    font-size: 1.59rem;
   }
 
   .landing-img {
@@ -417,7 +438,7 @@ body {
   }
 
   .footer{
-    height: 50vh;
+    height: 60vh;
   }
 
   /* Change this ^^^ (.contact-img)*/
